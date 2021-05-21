@@ -1,0 +1,24 @@
+section{
+	height: 90%;
+}
+
+.heading{
+	font-size: 3.2rem;
+	margin-bottom: 10px;
+	color: #2D2D2D;
+}
+
+/* Mobile Optimization */
+@media (max-width: 920px) {
+	.heading{
+		font-size: 2.3rem;
+	}
+}
+
+/* CSS for the Swipe TextSpan Element */
+.sw{
+	font-size: 1rem;
+	color: rgb(126, 126, 126);
+	font-weight: lighter;
+	display: inline;
+}

@@ -1,0 +1,109 @@
+
+.largeprojects{
+	margin-top: 40px;
+}
+
+.projectviewer{
+	height: 300px;
+	margin-top: 20px;
+	overflow-x: scroll;
+	border: 1px solid gray;
+	padding: 10px;
+	display: flex;
+	overflow-y: hidden;
+}
+
+
+.project{
+	height: 100%;
+	width: 500px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+	border: 1px solid black;
+	display: flex;
+	margin: 0px 10px;
+	cursor: pointer;
+	
+}
+
+
+#langimg{
+	margin: 80px 20px;
+}
+
+.project:hover{
+	background-color: crimson;
+}
+
+.projectdetails{
+	padding: 20px;
+	width: 400px;
+}
+
+.projectitle{
+	font-size: 2.3rem;
+
+	margin-bottom: 10px 
+}
+
+.desc, .yr, .stack{
+	color: rgba(255, 255, 255, 0.541);
+}
+
+
+
+@media (max-width: 920px) {
+	.project > .scrarea {
+		height: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	.heading{
+		font-size: 2.3rem;
+	}
+
+	.projectviewer{
+		margin-top: 20px;
+		height: 420px;
+		width: 115%;
+		margin-left: -20px;
+		overflow-x: scroll;
+		border: 1px solid gray;
+		display: flex;
+		overflow-y: hidden;
+	}
+
+	.project{
+		background-color: rgb(17, 17, 17);
+		color: white;
+		border: 1px solid black;
+		margin: 0px 5px;
+		cursor: pointer;
+		display: block;
+		width: 300px;
+	}
+	
+	#langimg{
+		margin: 20px 0 10px 0;
+	}
+
+	.project:hover{
+		background-color: crimson;
+	}
+
+	.projectdetails{
+		padding: 20px;
+		width: 300px;
+	}
+
+	.projectitle{
+		font-size: 2rem;
+		margin-bottom: 10px 
+	}
+
+	.desc, .yr, .stack{
+		color: rgba(255, 255, 255, 0.541);
+		overflow-wrap: break-word;
+	}
+}
