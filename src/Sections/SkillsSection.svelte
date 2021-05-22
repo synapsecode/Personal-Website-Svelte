@@ -1,4 +1,5 @@
 <script>
+	export let isDarkMode;
 	const languagesAndFrameworks = lnf;
 	const skills = skillandtech;
 </script>
@@ -6,7 +7,7 @@
 <section>
 	<h1 class="heading">🤙 Languages & Frameworks <span class="sw">(swipe)</span></h1>
 	<br />
-	<div class="sidescroll" id="lngf">
+	<div class="sidescroll {isDarkMode ? 'dmsc' : ''}" id="lngf">
 		{#each languagesAndFrameworks as e}
 			<div class='lang'>
 				<center>
@@ -20,7 +21,7 @@
 	<br>
 	<h1 class="heading">👀 Skills & Technologies <span class="sw">(swipe)</span></h1>
 	<br />
-	<div class="sidescroll" id="sk">
+	<div class="sidescroll {isDarkMode ? 'dmsc' : ''}" id="sk">
 		{#each skills as e}
 			<div class='skill'>
 				<center>
@@ -33,6 +34,8 @@
 </section>
 
 <style>
+	
+
 	.sidescroll{
 		border: 1px double rgba(0, 0, 0, 0.493);
 		height: 150px;

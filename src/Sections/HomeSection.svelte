@@ -1,6 +1,29 @@
 <script>
+	import SocialButton from '../Components/SocialButton.svelte';
+
 	//Getting DataElements from GLobal Data JS
 	let socialElements = social;
+
+	import {createEventDispatcher} from 'svelte';
+	const dispatch = createEventDispatcher();
+	function redirect(name){
+		dispatch('social_redirect', {
+			socialName: name,
+		});
+	}
+
+	const workWithMe = () => {
+		dispatch('social_redirect', {
+			socialName: 'Gmail',
+		});
+	}
+
+	const gotoProjects = () => {
+		dispatch('goto_projects', {
+		});
+	}
+
+
 </script>
 
 <section class="Home">
@@ -16,16 +39,16 @@
 		<h1 class="hello">Hey! 👋 I’m Manas Hejmadi</h1>
 		<h4 class="subtitle">I Translate Ideas into Code.</h4>
 		<div class="cta">
-		  	<div class="outlinebtn" onclick="">WORK WITH ME</div>
-			<div class="outlinebtn" onclick="">PROJECTS</div>
+		  	<div class="outlinebtn" on:click={workWithMe}>WORK WITH ME</div>
+			<div class="outlinebtn" on:click="{gotoProjects}">PROJECTS</div>
 		</div>
 		<div class="contactbar" id="cBar">
 			{#each socialElements.slice(0,socialElements.length-2) as soc}
-				<img
-					src="{soc.imageSrc}"
-					alt="{soc.name} Contact"
-					class='minicontacticon'
-					onclick=""
+				<SocialButton
+					name="{soc.name}"
+					isMini={true}
+					image={soc.imageSrc}
+					on:click="{()=>redirect(soc.name)}" 
 				/>
 			{/each}
 			<h4 class="loc">Bengaluru, India</h4>
@@ -95,10 +118,6 @@
 		margin-bottom: 10px;
 		color: rgb(102, 102, 102);
 	}
-
-	/* Mini Contact Icon */
-	.minicontacticon{ height: 40px; width: 40px; }
-	.minicontacticon:hover{ border: 1px dotted goldenrod; }
 
 	.outlinebtn{
 		padding: 10px 20px;

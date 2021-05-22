@@ -5,7 +5,6 @@ section{
 .heading{
 	font-size: 3.2rem;
 	margin-bottom: 10px;
-	color: #2D2D2D;
 }
 
 /* Mobile Optimization */
@@ -21,4 +20,24 @@ section{
 	color: rgb(126, 126, 126);
 	font-weight: lighter;
 	display: inline;
+}
+
+/* Controlls the Width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background:transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(15, 15, 15, 0.479); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
 }

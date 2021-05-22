@@ -66,7 +66,7 @@ let social = [
 
 let proj_links = {
 	Covaxinator: 'https://github.com/synapsecode/Covaxinator',
-	FlutterGym: "https://github.com/synapsecode/FlutterGym",
+	FlutterGym: null,
 	Microblogger: "https://github.com/synapsecode/Microblogger",
 	VoteFlow: "https://github.com/synapsecode/VoteFlow",
 	SchoolCompanion: "https://github.com/synapsecode/SchoolCompanion-App",

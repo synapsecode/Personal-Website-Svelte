@@ -1,22 +1,37 @@
 <script>
+export let isDarkMode;
+let isDrawerOpen = false;
 import {createEventDispatcher} from 'svelte';
 const dispatch = createEventDispatcher();
 function relocate(loc){
+	if(isDrawerOpen){
+		document.getElementById("click").checked = false;
+		isDrawerOpen = false;
+	}
 	dispatch('relocate', {
 		destination: loc,
 	});
 }
 
+function onDrawerStateChanged(x){
+	if(isDrawerOpen){
+		document.getElementById("click").checked = false;
+		isDrawerOpen = false;
+	}else{
+		isDrawerOpen = true;
+	}
+}
+
 </script>
 
-<nav>
-	<img src="Images/brain.png" alt="" id="logoimg" />
+<nav class="{isDarkMode ? 'dmnav' : ''}">
+	<img src="Images/brain.png" alt="" id="logoimg" class="{isDarkMode ? 'dm' : ''}" />
 	<!-- Part of Drawer Open & Close Mechanism -->
-	<input type="checkbox" id="click" />
+	<input type="checkbox" id="click" on:change={onDrawerStateChanged} />
 	<label for="click" class="menu-btn">
 		<i class="fas fa-bars"></i>
 	</label>
-	<ul>
+	<ul class="{isDarkMode ? 'ddm' : ''}">
 		<li><p on:click="{()=>relocate('home')}">Home</p></li>
 		<li><p on:click="{()=>relocate('about')}">About</p></li>
 		<li><p on:click="{()=>relocate('skills')}">Skills</p></li>
@@ -92,7 +107,8 @@ function relocate(loc){
 			position: fixed;
 			top: 65px;
 			left: -100%;
-			background: rgba(255, 255, 255, 0.925);
+			background: rgba(255, 255, 255);
+			opacity: 0.90;	
 			height: 100%;
 			width: 100%;
 			text-align: center;
@@ -145,5 +161,19 @@ function relocate(loc){
 	#logoimg{
 		height: 48px;
 		width: 48px;
+	}
+
+	.dm{
+		filter: invert(80%);
+	}
+
+	.ddm{
+		opacity: 0.99;
+		filter: invert(100%);
+	}
+	
+	.dmnav{
+		
+		background-color: #161616;
 	}
 </style>
