@@ -34,8 +34,6 @@
 </section>
 
 <style>
-	
-
 	.sidescroll{
 		border: 1px double rgba(0, 0, 0, 0.493);
 		height: 150px;
@@ -59,5 +57,25 @@
 
 	.lname{
 		font-size: 1.1rem;
+	}
+
+	/* Controlls the Width */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background:transparent; 
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: rgba(15, 15, 15, 0.479); 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555; 
 	}
 </style>

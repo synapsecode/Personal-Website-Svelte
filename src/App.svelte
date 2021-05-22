@@ -79,7 +79,7 @@
 
 <main>
 	<div class="fab" on:click={toggleTheme}>
-		<i class="fa fa-lightbulb-o fabi" style="font-size:20px"></i>
+		<i class="fa fa-lightbulb-o fabi" style="font-size:22px"></i>
 	</div>
 	<div class="paint-area">
 		<!-- Home -->

@@ -54,6 +54,7 @@ function onDrawerStateChanged(x){
 		padding: 0 50px 0 50px;
 		flex-wrap: wrap;
 		color: rgba(0, 0, 0, 0.822);
+		transition: 0.3s ease;
 	}
 	
 	nav ul {

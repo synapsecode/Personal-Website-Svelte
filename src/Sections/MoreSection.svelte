@@ -51,4 +51,24 @@
 			overflow-y: hidden;
 		}
 	}
+
+	/* Controlls the Width */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background:transparent; 
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: rgba(15, 15, 15, 0.479); 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555; 
+	}
 </style>
