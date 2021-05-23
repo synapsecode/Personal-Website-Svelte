@@ -162,6 +162,7 @@ function onDrawerStateChanged(x){
 	#logoimg{
 		height: 48px;
 		width: 48px;
+		transition: 0.3s ease
 	}
 
 	.dm{

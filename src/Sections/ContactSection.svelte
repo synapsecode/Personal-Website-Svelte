@@ -34,7 +34,7 @@
 		margin-top: -10px;
 		margin-left: 80px;
 		font-size: 1rem;
-		color: #333;
+		opacity: 80%;
 		font-weight: lighter;
 	}
 
