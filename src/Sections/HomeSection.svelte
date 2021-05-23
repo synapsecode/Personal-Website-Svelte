@@ -1,4 +1,6 @@
 <script>
+	export let isDarkMode;
+
 	import SocialButton from '../Components/SocialButton.svelte';
 
 	//Getting DataElements from GLobal Data JS
@@ -51,7 +53,7 @@
 					on:click="{()=>redirect(soc.name)}" 
 				/>
 			{/each}
-			<h4 class="loc">Bengaluru, India</h4>
+			<h4 class="loc {isDarkMode ? 'd': ''}">Bengaluru, India</h4>
 		</div>
 	  </div>
 </section>
@@ -94,10 +96,14 @@
 	}
 
 	.loc{
-		color: rgb(150, 148, 148);
+		color: rgba(0, 0, 0, 0.600);
 		font-weight: lighter;
 		margin-left: 200px;
 		margin-top: -32px;
+	}
+
+	.d{
+		color: rgba(255, 255, 255, 0.479);
 	}
 
 	.cta{

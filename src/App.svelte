@@ -1,5 +1,10 @@
 <script>
+	import SvelteSeo from "svelte-seo";
 	import watchMedia from "svelte-media";
+
+	const myCurrentAge = myAge;
+
+	//Components
 	import Navbar from './Navbar.svelte';
 	import Snackbar from './Snackbar.svelte';
 	import Footer from './Footer.svelte';
@@ -10,6 +15,7 @@
 	import MoreSection from './Sections/MoreSection.svelte';
 	import TestimonialsSection from './Sections/TestimonialsSection.svelte';
 	import ContactSection from './Sections/ContactSection.svelte';
+	
 
 	//JS Data Variables
 	const socialLinks = social_links;
@@ -74,6 +80,12 @@
 
 </script>
 
+<SvelteSeo
+  title="Manas Hejmadi"
+  description={`The Personal Portfolio Website of Manas Hejmadi, a ${myCurrentAge} year old Developer and Startup Aspirant from Bengaluru, India`}
+  keywords={["manas", "hejmadi", "portfolio", "coder", "programmer", "developer", "flutter developer"]}
+/>
+
 <!--The Navigation Bar-->
 <Navbar on:relocate={onRelocate} isDarkMode={isDarkMode}/>
 
@@ -87,6 +99,7 @@
 		<HomeSection 
 			on:social_redirect={onSocialRedirect}
 			on:goto_projects={()=>goto('projects')}
+			isDarkMode={isDarkMode}
 		/>
 		<div class="content">
 			<span id="about"></span>	
@@ -111,7 +124,10 @@
 			<TestimonialsSection/>
 			<br><br>
 			<span id="contact"></span>
-			<ContactSection on:social_redirect={onSocialRedirect}/>
+			<ContactSection 
+				on:social_redirect={onSocialRedirect}
+				isDarkMode={isDarkMode}
+			/>
 		</div>
 		
 	</div>

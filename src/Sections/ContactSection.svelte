@@ -1,4 +1,5 @@
 <script>
+	export let isDarkMode;
 	import SocialButton from '../Components/SocialButton.svelte';
 	let socialElements = social;
 
@@ -14,7 +15,7 @@
 <section>
 	<div class="Contacts">
 		<h1 class="heading">🤙 Contact Me</h1>
-		<h5 class="gm">(manashejmadi@gmail.com)</h5>
+		<h5 class="gm {isDarkMode ? 'd' : ''}">(manashejmadi@gmail.com)</h5>
 		<br />
 		<div class="contactbar" id="cBar2">
 			{#each socialElements as soc}
@@ -34,8 +35,13 @@
 		margin-top: -10px;
 		margin-left: 80px;
 		font-size: 1rem;
-		opacity: 80%;
+		color: #333;
 		font-weight: lighter;
+		z-index:-10;
+	}
+
+	.d{
+		color: rgba(255, 255, 255, 0.479);
 	}
 
 	@media(max-width:920px){

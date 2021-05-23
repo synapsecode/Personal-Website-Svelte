@@ -17,9 +17,9 @@ section{
 /* CSS for the Swipe TextSpan Element */
 .sw{
 	font-size: 1rem;
-	color: rgb(126, 126, 126);
+	/* color: rgb(126, 126, 126); */
 	font-weight: lighter;
-	display: inline;
+	display: none;
 }
 
 /* Desktop Specific */

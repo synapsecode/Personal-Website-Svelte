@@ -21,7 +21,7 @@
 			<div class="scrarea">
 				<div class="ximage">
 					<center>
-						<img src="{project.imageSrc}" alt="" id="langimg">
+						<img src="{project.imageSrc}" alt="" id="langimg" height="96" width="96">
 					</center>
 				</div>
 				<div class="projectdetails">
@@ -37,7 +37,7 @@
 		{:else}
 		<div class="ximage">
 				<center>
-					<img src="{project.imageSrc}" alt="" id="langimg">
+					<img src="{project.imageSrc}" alt="" id="langimg" height="96" width="96">
 				</center>
 			</div>
 			<div class="projectdetails">

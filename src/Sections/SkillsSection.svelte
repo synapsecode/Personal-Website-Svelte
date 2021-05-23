@@ -11,7 +11,7 @@
 		{#each languagesAndFrameworks as e}
 			<div class='lang'>
 				<center>
-					<img src="{e.imageSrc}" alt="" class="xb" /><br />
+					<img src="{e.imageSrc}" alt="{e.name}" height="75" width="75" /><br />
 					<small class="lname">{e.name}</small>
 				</center>
 			</div>
@@ -25,7 +25,7 @@
 		{#each skills as e}
 			<div class='skill'>
 				<center>
-					<img src="{e.imageSrc}" alt="" class="xb" /><br />
+					<img src="{e.imageSrc}" alt="{e.name}" height="75" width="75" /><br />
 					<small class="lname">{e.name}</small>
 				</center>
 			</div>
@@ -49,12 +49,7 @@
 		margin: 0px 10px;
 		padding-top: 3px;
 	}
-
-	.xb{
-		height: 75px;
-		width: 75px;
-	}
-
+	
 	.lname{
 		font-size: 1.1rem;
 	}
