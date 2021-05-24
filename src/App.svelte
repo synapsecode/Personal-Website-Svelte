@@ -76,6 +76,8 @@
 	const toggleTheme = () => {
 		isDarkMode = !isDarkMode;
 		window.document.body.classList.toggle('dm')
+		// Change the AddressbarThemeColor
+		window.document.querySelector('meta[name="theme-color"]').setAttribute('content',  isDarkMode ? '#000000' : '#FFFFFF');
 	}
 
 </script>
@@ -91,7 +93,7 @@
 
 <main>
 	<div class="fab" on:click={toggleTheme}>
-		<i class="fa fa-lightbulb-o fabi" style="font-size:22px"></i>
+		<i class="fa fa-lightbulb{isDarkMode ? '-o' : ''} fabi" style="font-size:22px"></i>
 	</div>
 	<div class="paint-area">
 		<!-- Home -->
@@ -151,6 +153,7 @@
 		margin-top: 14px;
 		color: gray;
 	}
+	
 	.fab{
 		height: 50px;
 		width: 50px;
@@ -162,9 +165,7 @@
 		right: 15px;
 		color: white;
 	}
-	.fab:hover{
-		background: #383737;
-	}
+
 	main{	
 		height: 100vh;
 		scroll-behavior: smooth;

@@ -15,7 +15,7 @@
 <section>
 	<div class="Contacts">
 		<h1 class="heading">🤙 Contact Me</h1>
-		<h5 class="gm {isDarkMode ? 'd' : ''}">(manashejmadi@gmail.com)</h5>
+		<h2 class="gm {isDarkMode ? 'd' : ''}">(manashejmadi@gmail.com)</h2>
 		<br />
 		<div class="contactbar" id="cBar2">
 			{#each socialElements as soc}
@@ -38,6 +38,7 @@
 		color: #333;
 		font-weight: lighter;
 		z-index:-10;
+		transition: 0.3s ease;
 	}
 
 	.d{

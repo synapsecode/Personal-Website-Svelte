@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "sirv-cli": "^1.0.0",
+    "svelte-device-detector": "^0.2.2",
     "svelte-seo": "^1.2.0"
   }
 }

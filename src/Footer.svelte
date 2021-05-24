@@ -41,7 +41,7 @@
 
 	.cpy{
 		margin-top: 10px;
-		color: rgb(92, 90, 90);
+		color:whitesmoke;
 	}
 
 	@media (max-width: 920px) {
@@ -58,11 +58,6 @@
 		.mad{
 			font-size: 1.3rem;
 			color: rgb(156, 156, 156);
-		}
-
-		.cpy{
-			margin-top: 10px;
-			color: rgb(92, 90, 90);
 		}
 
 		footer{

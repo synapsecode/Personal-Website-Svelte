@@ -32,14 +32,14 @@
 	<!-- Image Fragment -->
 	<div class="image">
 		<center>
-			<img src="Images/pp.png" class="pp" alt="Profile"/>
+			<img src="Images/profile.png" class="pp" alt="Profile" height="420" width="420"/>
 		</center>
 	</div>
 	<!-- Content Fragment -->
 	<div class="homespace">
 		<div class="signature"></div>
 		<h1 class="hello">Hey! 👋 I’m Manas Hejmadi</h1>
-		<h4 class="subtitle">I Translate Ideas into Code.</h4>
+		<h2 class="subtitle">I Translate Ideas into Code.</h2>
 		<div class="cta">
 		  	<div class="outlinebtn" on:click={workWithMe}>WORK WITH ME</div>
 			<div class="outlinebtn" on:click="{gotoProjects}">PROJECTS</div>
@@ -53,7 +53,7 @@
 					on:click="{()=>redirect(soc.name)}" 
 				/>
 			{/each}
-			<h4 class="loc {isDarkMode ? 'd': ''}">Bengaluru, India</h4>
+			<h3 class="loc {isDarkMode ? 'd': ''}">Bengaluru, India</h3>
 		</div>
 	  </div>
 </section>
@@ -65,10 +65,7 @@
 	}
 
 	.pp{
-		height: 420px;
-		width: 420px;
 		margin: auto 20px;
-
 		border-radius: 50%;
 		border: 1px solid black;
 	}
@@ -99,7 +96,8 @@
 		color: rgba(0, 0, 0, 0.600);
 		font-weight: lighter;
 		margin-left: 200px;
-		margin-top: -32px;
+		margin-top: -36px;
+		transition: 0.3s ease;
 	}
 
 	.d{
@@ -122,6 +120,7 @@
 		font-size: 1.6rem;
 		font-weight: lighter;
 		margin-bottom: 10px;
+		margin-left: 5px;
 		color: rgb(102, 102, 102);
 	}
 
