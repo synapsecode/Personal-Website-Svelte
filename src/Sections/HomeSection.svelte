@@ -39,7 +39,7 @@
 	<div class="homespace">
 		<div class="signature"></div>
 		<h1 class="hello">Hey! 👋 I’m Manas Hejmadi</h1>
-		<h2 class="subtitle">I Translate Ideas into Code.</h2>
+		<h2 class="subtitle {isDarkMode ? 'd': ''}">I Translate Ideas into Code.</h2>
 		<div class="cta">
 		  	<div class="outlinebtn" on:click={workWithMe}>WORK WITH ME</div>
 			<div class="outlinebtn" on:click="{gotoProjects}">PROJECTS</div>
@@ -121,7 +121,7 @@
 		font-weight: lighter;
 		margin-bottom: 10px;
 		margin-left: 5px;
-		color: rgb(102, 102, 102);
+		color: rgb(92, 92, 92);
 	}
 
 	.outlinebtn{
@@ -155,7 +155,7 @@
 		}
 
 		.Home {
-			margin-top: 2vh;
+			/* margin-top: 1vh; */
 			display: block;
 			padding-top:25px;
 		}
@@ -182,6 +182,11 @@
 			width: 320px;
 			margin: auto;
 			margin-bottom: 20px;
+		}
+
+		.subtitle{
+			font-weight:normal;
+			font-size: 1.3rem;
 		}
 	}
 </style>

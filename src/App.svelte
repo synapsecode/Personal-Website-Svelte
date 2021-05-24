@@ -77,7 +77,7 @@
 		isDarkMode = !isDarkMode;
 		window.document.body.classList.toggle('dm')
 		// Change the AddressbarThemeColor
-		window.document.querySelector('meta[name="theme-color"]').setAttribute('content',  isDarkMode ? '#000000' : '#FFFFFF');
+		// window.document.querySelector('meta[name="theme-color"]').setAttribute('content',  isDarkMode ? '#000000' : '#FFFFFF');
 	}
 
 </script>
