@@ -2,7 +2,11 @@
 	import SvelteSeo from "svelte-seo";
 	import watchMedia from "svelte-media";
 
+	//GlobalJS Variables
 	const myCurrentAge = myAge;
+	const socialLinks = social_links;
+
+	let isDarkMode = window.document.body.classList.contains('dm');
 
 	//Components
 	import Navbar from './Navbar.svelte';
@@ -15,13 +19,6 @@
 	import MoreSection from './Sections/MoreSection.svelte';
 	import TestimonialsSection from './Sections/TestimonialsSection.svelte';
 	import ContactSection from './Sections/ContactSection.svelte';
-	
-
-	//JS Data Variables
-	const socialLinks = social_links;
-
-	let isDarkMode = false;
-	
 
 	const mediaqueries = {
 		mobile: "(max-width: 920px)",
@@ -75,7 +72,8 @@
 
 	const toggleTheme = () => {
 		isDarkMode = !isDarkMode;
-		window.document.body.classList.toggle('dm')
+		window.document.body.classList.toggle('dm');
+		localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
 		// Change the AddressbarThemeColor
 		// window.document.querySelector('meta[name="theme-color"]').setAttribute('content',  isDarkMode ? '#000000' : '#FFFFFF');
 	}
@@ -153,7 +151,7 @@
 		margin-top: 14px;
 		color: gray;
 	}
-	
+
 	.fab{
 		height: 50px;
 		width: 50px;

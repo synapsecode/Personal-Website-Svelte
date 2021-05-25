@@ -1,5 +1,6 @@
 <script>
 	export let isDarkMode;
+	
 
 	import SocialButton from '../Components/SocialButton.svelte';
 
@@ -42,7 +43,7 @@
 		<h2 class="subtitle {isDarkMode ? 'd': ''}">I Translate Ideas into Code.</h2>
 		<div class="cta">
 		  	<div class="outlinebtn" on:click={workWithMe}>WORK WITH ME</div>
-			<div class="outlinebtn" on:click="{gotoProjects}">PROJECTS</div>
+			<div class="outlinebtn" on:click={gotoProjects}>PROJECTS</div>
 		</div>
 		<div class="contactbar" id="cBar">
 			{#each socialElements.slice(0,socialElements.length-2) as soc}
@@ -158,6 +159,7 @@
 			/* margin-top: 1vh; */
 			display: block;
 			padding-top:25px;
+			height: calc(100% - 65px);
 		}
 
 		.homespace {
@@ -180,8 +182,7 @@
 
 		.cta{
 			width: 320px;
-			margin: auto;
-			margin-bottom: 20px;
+			margin: auto auto 20px calc((100vw - 320px)/2);
 		}
 
 		.subtitle{
