@@ -25,7 +25,7 @@ function onDrawerStateChanged(x){
 </script>
 
 <nav class="{isDarkMode ? 'dmnav' : ''}">
-	<img src="Images/brain.png" alt="" id="logoimg" class="{isDarkMode ? 'dm' : ''}" />
+	<img src="Images/profile.png" alt="" id="logoimg" class="{isDarkMode ? 'dm' : ''}" />
 	<!-- Part of Drawer Open & Close Mechanism -->
 	<input type="checkbox" id="click" on:change={onDrawerStateChanged} />
 	<label for="click" class="menu-btn">
@@ -162,11 +162,15 @@ function onDrawerStateChanged(x){
 	#logoimg{
 		height: 48px;
 		width: 48px;
-		transition: 0.3s ease
+		transition: 0.3s ease;
+		border: 1px solid black;
+		border-radius:50%;
 	}
 
 	.dm{
-		filter: invert(80%);
+		/* filter: invert(80%); */
+		border: 2px solid white;
+		border-radius:50%;
 	}
 
 	.ddm{
