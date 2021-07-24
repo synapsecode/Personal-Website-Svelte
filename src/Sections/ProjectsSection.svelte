@@ -31,7 +31,7 @@
 	</div>
 	<br><br>
 	<div class="personalprojects" >
-		<h1 class="heading">🔥 Personal Projects <span class="sw">(swipe)</span></h1>
+		<h1 class="heading">🔥 OpenSource Personal Projects <span class="sw">(swipe)</span></h1>
 		<div class="projectviewer" id="perprojviewer">
 			{#each personalProjectData as p}
 				<ProjectTemplate

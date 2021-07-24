@@ -66,7 +66,7 @@
 			console.log('Redirecting to Project Link: ' + link);
 			window.open(link, '_blank').focus();
 		}else{
-			alert("Project Redirect Link does not exist!");
+			alert("This Project is ClosedSource and Private");
 		}
 	}
 

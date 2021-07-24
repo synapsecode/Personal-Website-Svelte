@@ -24,7 +24,7 @@ let social_links = {
 	Github: "https://github.com/synapsecode",
 	Gmail: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com",
 	Facebook: "https://www.facebook.com/synapse.code",
-	Twitter: "https://twitter.com/synapse_code",
+	Twitter: "https://twitter.com/manashejmadi",
 }
 
 let social = [
@@ -91,6 +91,8 @@ let project_desc = {
 //============================================PERSONAL PROJECTS============================================
 
 let perproj_links = {
+	FireAuth: "https://pub.dev/packages/fireauth",
+	FireSetup: "https://github.com/synapsecode/FireSetup",
 	FaceSwapApp: "https://github.com/synapsecode/Flask-FaceSwapWebApp",
 	TasksApp: "https://github.com/synapsecode/JavaScript-TasksApp",
 	TextDifferenceFinder: "https://github.com/synapsecode/JavaScript-MiniProjects",
@@ -102,6 +104,8 @@ let perproj_links = {
 }
 
 let personal_proj_desc = {
+	FireAuth: "FireAuth is a Flutter Package that simplifies Flutter Firebase Authentication and makes building great applications really easy! Works on Mobile and Web!",
+	FireSetup: "A Script that adds Firebase to your flutter project seamlessly! Also contains good documentation to get you started with FireAuth.",
 	FaceSwapApp: "An Application that allows you to Swap your face with another face over the web! It uses Python to conduct a bit of ML Magic and then uses Flask to host itself.",
 	TasksApp: "A JavaScript WebApp that provides Google Tasks esque functionality with a beautiful and feature-rich User Interface",
 	TextDifferenceFinder: "Finds the Differences betweenn 2 blocks of text and highlights them beautifully!",
@@ -204,6 +208,24 @@ let PROJDATA = [
 
 
 let PERPROJDATA = [
+	{
+		displayName: "FireAuth",
+		Name: "FireAuth",
+		description: personal_proj_desc.FireAuth,
+		year: 2021,
+		TechStack: "Flutter Package",
+		imageSrc: "Images/flutter.png",
+		link: perproj_links.FireAuth,
+	},
+	{
+		displayName: "FireSetup Utility",
+		Name: "FireSetup",
+		description: personal_proj_desc.FireSetup,
+		year: 2021,
+		TechStack: "Python + Batch",
+		imageSrc: "Images/python.png",
+		link: perproj_links.FireSetup,
+	},
 	{
 		displayName: "FaceSwapApp",
 		Name: "FaceSwapApp",
