@@ -76,7 +76,7 @@ let proj_links = {
 }
 
 let project_desc = {
-	Covaxinator: 'Covaxinator is a Vaccine Administration and Tracking Platform built in Flask for the Oakridge Codefest 2021 Hackathon',
+	Covaxinator: 'Covaxinator is a Vaccine Administration and Tracking Platform built in Flask for the Oakridge Codefest 2021 Hackathon.',
 	FlutterGym: "A Complete Online Gym and Training Platform coupled with a inbuilt Store for Apparel, Suppliments, Equipments and support for meditation, articles, etc",
 	Microblogger: "An Indian Flutter Based Microblogging platfom that provides a new way to socialize withyour peers!",
 	VoteFlow: "A Complete Voting Platform for Schools, Colleges, Universities. Communities and Small Businesses with a really simple and easy to use UI all built using Flask!",
@@ -359,14 +359,14 @@ let skillandtech = [
 	},
 	{
 		name: "Creativity",
-		imageSrc: "Images/brain.png",
+		imageSrc: "Images/creativity.png",
 	},
 	{
 		name: "Blogging",
 		imageSrc: "Images/medium.png",
 	},
 	{
-		name: "BrainStorming",
+		name: "Ideation",
 		imageSrc: "Images/brain.png",
 	},
 ];
@@ -382,6 +382,7 @@ let testimonial_data = [
 		    exceeded my expectations. He built the Backend very professionally and will definitely\
 			 be using his services again as well as recommending him to all of my family and friends.'
 	},
+	
 ]
 //============================================AGGREGATION============================================
 

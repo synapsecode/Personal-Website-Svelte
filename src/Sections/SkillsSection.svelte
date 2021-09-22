@@ -7,7 +7,7 @@
 <section>
 	<h1 class="heading">🤙 Languages & Frameworks <span class="sw">(swipe)</span></h1>
 	<br />
-	<div class="sidescroll {isDarkMode ? 'dmsc' : ''}" id="lngf">
+	<div class="sidescroll {isDarkMode ? 'dmscr' : ''}" id="lngf">
 		{#each languagesAndFrameworks as e}
 			<div class='lang'>
 				<center>
@@ -21,7 +21,7 @@
 	<br>
 	<h1 class="heading">👀 Skills & Technologies <span class="sw">(swipe)</span></h1>
 	<br />
-	<div class="sidescroll {isDarkMode ? 'dmsc' : ''}" id="sk">
+	<div class="sidescroll {isDarkMode ? 'dmscr' : ''}" id="sk">
 		{#each skills as e}
 			<div class='skill'>
 				<center>
@@ -41,6 +41,7 @@
 		display: flex;
 		overflow-x: scroll;
 		padding: 12px 20px;
+		border-radius: 5px;
 	}
 
 	.lang, .skill{
@@ -49,6 +50,11 @@
 		margin: 0px 10px;
 		padding-top: 3px;
 	}
+
+	.dmscr{
+		border: 1px double rgba(255, 255, 255, 0.193);
+	}
+
 	
 	.lname{
 		font-size: 1.1rem;

@@ -106,22 +106,24 @@
 			<AboutSection/>
 			<br>
 			<span id="skills"></span>
-			<SkillsSection/>
+			<SkillsSection isDarkMode={isDarkMode}/>
 			<br>
 			<span id="projects"></span>
 			<ProjectsSection
 				media={media}
 				on:project_redirect={projectRedirect}
+				isDarkMode={isDarkMode}
 			/>
 			<br><br>
 			<span id="more"></span>
 			<MoreSection 
 				media={media}
 				on:project_redirect={projectRedirect}
+				isDarkMode={isDarkMode}
 			/>
-			<br>
+			<br><br>
 			<span id="testimonials"></span>
-			<TestimonialsSection/>
+			<TestimonialsSection isDarkMode={isDarkMode}/>
 			<br><br>
 			<span id="contact"></span>
 			<ContactSection 

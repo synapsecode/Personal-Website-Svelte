@@ -1,13 +1,14 @@
 <script>
+	export let isDarkMode;
 	import ProjectTemplate from '../Components/ProjectTemplate.svelte'
 	const testimonials = testimonial_data;
 </script>
 
 <section>
 	<div class="Testimonials">
-		<h1 class="heading">✔️ Testimonials </h1>
+		<h1 class="heading">✅ Testimonials </h1>
 
-		<div class="projectviewer" id="testimonialviewer">
+		<div class="projectviewer {isDarkMode ? 'dm':''}" id="testimonialviewer">
 			{#each testimonials as e}
 				<ProjectTemplate
 					project={e}
@@ -20,31 +21,51 @@
 </section>
 
 <style>
-
 	.projectviewer{
-		height: 300px;
-		margin-top: 20px;
-		overflow-x: scroll;
-		border: 1px solid gray;
-		padding: 10px;
+		margin-top: 0px;
+		border: 1px solid rgba(0,0,0,0.493);
+		border-radius: 5px;
+		padding: 15px 10px 5px 15px;
 		display: flex;
 		overflow-y: hidden;
+		
+	}
+
+	.dm{
+		border: 1px solid rgba(255,255,255,0.15);
 	}
 
 	@media (max-width: 920px) {
 		.projectviewer{
-			margin-top: 20px;
-			height: 420px;
+			margin: 20px 0 0 -20px;
 			width: 115%;
-			margin-left: -20px;
-			overflow-x: scroll;
-			border: 1px solid gray;
-			display: flex;
-			overflow-y: hidden;
+			padding: 10px;
 		}
 	}
 
-	#testimonialviewer{
-		height: fit-content;
+	/* ============== HIDE SCROLLBAR FROM VIEW ================ */
+	/* width */
+	::-webkit-scrollbar {
+		display: none;
+		width: 10px;
 	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		display: none;
+		background: red;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		display: none;
+		background: transparent;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		display: none;
+		background: transparent;
+	}
+	/* ============== HIDE SCROLLBAR FROM VIEW ================ */
 </style>

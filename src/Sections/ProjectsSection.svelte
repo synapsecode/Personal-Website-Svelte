@@ -3,6 +3,7 @@
 	import ProjectTemplate from '../Components/ProjectTemplate.svelte';
 
 	export let media;
+	export let isDarkMode;
 	const projectData = PROJDATA;
 	const personalProjectData = PERPROJDATA;
 	
@@ -19,7 +20,7 @@
 <section>
 	<div class="largeprojects">
 		<h1 class="heading">🔥 Large Projects <span class="sw">(swipe)</span></h1>
-		<div class="projectviewer" id="projectviewer">
+		<div class="projectviewer {isDarkMode ? 'dm':''}" id="projectviewer">
 			{#each projectData as p}
 				<ProjectTemplate
 					media={media}
@@ -32,7 +33,7 @@
 	<br><br>
 	<div class="personalprojects" >
 		<h1 class="heading">🔥 OpenSource Personal Projects <span class="sw">(swipe)</span></h1>
-		<div class="projectviewer" id="perprojviewer">
+		<div class="projectviewer {isDarkMode ? 'dm':''}" id="perprojviewer">
 			{#each personalProjectData as p}
 				<ProjectTemplate
 					media={media}
@@ -50,45 +51,51 @@
 	}
 
 	.projectviewer{
-		height: 300px;
-		margin-top: 20px;
-		overflow-x: scroll;
-		border: 1px solid gray;
-		padding: 10px;
+		margin-top: 0px;
+		border: 1px solid rgba(0,0,0,0.493);
+		border-radius: 5px;
+		padding: 15px 10px 15px 10px;
 		display: flex;
 		overflow-y: hidden;
+		
+	}
+
+	.dm{
+		border: 1px solid rgba(255,255,255,0.15);
 	}
 
 	@media (max-width: 920px) {
 		.projectviewer{
-			margin-top: 20px;
-			height: 420px;
+			margin: 20px 0 0 -20px;
 			width: 115%;
-			margin-left: -20px;
+			padding: 10px;
 			overflow-x: scroll;
-			border: 1px solid gray;
-			display: flex;
-			overflow-y: hidden;
 		}
 	}
 
-		/* Controlls the Width */
-		::-webkit-scrollbar {
+	/* ============== HIDE SCROLLBAR FROM VIEW ================ */
+	/* width */
+	::-webkit-scrollbar {
+		display: none;
 		width: 10px;
 	}
 
 	/* Track */
 	::-webkit-scrollbar-track {
-		background:transparent; 
+		display: none;
+		background: red;
 	}
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		background: rgba(15, 15, 15, 0.479); 
+		display: none;
+		background: transparent;
 	}
 
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-		background: #555; 
+		display: none;
+		background: transparent;
 	}
+	/* ============== HIDE SCROLLBAR FROM VIEW ================ */
 </style>

@@ -1,4 +1,4 @@
-let currentTheme = 'light';
+let currentTheme = 'dark';
 
 const applyThemeAtStartup = () => {
 	currentTheme = localStorage.getItem('theme') ?? 'light';

@@ -42,8 +42,8 @@
 		<h1 class="hello">Hey! 👋 I’m Manas Hejmadi</h1>
 		<h2 class="subtitle {isDarkMode ? 'd': ''}">I Translate Ideas into Code.</h2>
 		<div class="cta">
-		  	<div class="outlinebtn" on:click={workWithMe}>WORK WITH ME</div>
-			<div class="outlinebtn" on:click={gotoProjects}>PROJECTS</div>
+		  	<div class="outlinebtn {isDarkMode ? 'dmob' : ''}" on:click={workWithMe}>WORK WITH ME</div>
+			<div class="outlinebtn {isDarkMode ? 'dmob' : ''}" on:click={gotoProjects}>PROJECTS</div>
 		</div>
 		<div class="contactbar" id="cBar">
 			{#each socialElements.slice(0,socialElements.length-2) as soc}
@@ -132,6 +132,7 @@
 		font-family: "Ubuntu", sans-serif;
 		margin: 5px;
 		cursor: pointer;
+		border-radius: 5px;
 	}
 
 	.outlinebtn:hover{
@@ -140,6 +141,12 @@
 		color: white;
 		transition: 0.5s;
 		cursor: pointer;
+	}
+
+	.dmob:hover{
+		border: 1px solid black;
+		background-color: white;
+		color: black;
 	}
 
 	/* Mobile View */

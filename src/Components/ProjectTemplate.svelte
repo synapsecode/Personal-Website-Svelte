@@ -58,20 +58,19 @@
 
 <style>
 	.project{
-		height: 100%;
 		width: 500px;
 		background-color: rgb(17, 17, 17);
 		color: white;
-		border: 1px solid black;
+		border: 1px solid rgba(255,255,255,0.1);
+		border-radius: 5px;
 		display: flex;
 		margin: 0px 10px;
 		cursor: pointer;
-		
 	}
 
 	#langimg{ margin: 80px 20px; }
 
-	.project:hover, .testimonial:hover{ background-color: crimson; }
+	.project:hover, .testimonial:hover{ border: 1px solid crimson; }
 
 	.projectdetails{
 		padding: 20px;
@@ -95,48 +94,18 @@
 	}
 
 	.testimonial{
-		border: 2px solid black;
-		background-color: rgb(8, 8, 8);
+		border: 1px solid rgba(255,255,255,0.1);
+		background-color: rgb(17, 17, 17);
 		color: white;
 		margin-right: 10px;
-		height: 350px;
+		margin-bottom: 10px;
+		max-height: 450px;
 		padding: 10px;
-	}
-
-	/* .testimonial > .projectdetails{
-		overflow-y: auto;
-		height: 100%;
-	} */
-
-	/* Desktop Only ~ Testimonials Scrollbar */
-	@media (min-width: 920px) {
-		/* Controlls the Width */
-		::-webkit-scrollbar {
-			width: 10px;
-		}
-
-		/* Track */
-		::-webkit-scrollbar-track {
-			background:transparent; 
-		}
-		
-		/* Handle */
-		::-webkit-scrollbar-thumb {
-			background: rgba(15, 15, 15, 0.479); 
-		}
-
-		/* Handle on hover */
-		::-webkit-scrollbar-thumb:hover {
-			background: #555; 
-		}
+		border-radius: 5px;
 	}
 
 	/* Mobile View */
 	@media (max-width: 920px) {
-		.testimonial{
-			height: 450px;
-		}
-
 		.project > .scrarea {
 			height: 100%;
 			overflow-y: scroll;
@@ -146,7 +115,8 @@
 		.project{
 			background-color: rgb(17, 17, 17);
 			color: white;
-			border: 1px solid black;
+			border: 1px solid rgba(255,255,255,0.1);
+			border-radius: 5px;
 			margin: 0px 5px;
 			cursor: pointer;
 			display: block;
@@ -158,7 +128,7 @@
 		}
 
 		.project:hover{
-			background-color: crimson;
+			border: 1px solid crimson;
 		}
 
 		.projectdetails{
