@@ -1,3 +1,4 @@
+let defaultTheme = 'dark';
 const applyThemeAtStartup = () => {
 	let currentTheme = localStorage.getItem('theme') ?? defaultTheme;
 	if(currentTheme === 'dark'){
