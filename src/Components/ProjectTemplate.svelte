@@ -68,6 +68,7 @@
 		display: flex;
 		margin: 0px 10px;
 		cursor: pointer;
+		transition: 0.3s ease;
 	}
 
 	#langimg{ margin: 80px 20px; }
@@ -99,6 +100,7 @@
 		max-height: 450px;
 		padding: 10px;
 		border-radius: 5px;
+		transition: 0.3s ease;
 	}
 
 	.desc, .yr, .stack{
