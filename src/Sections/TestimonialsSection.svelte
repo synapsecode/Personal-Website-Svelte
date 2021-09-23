@@ -13,6 +13,7 @@
 				<ProjectTemplate
 					project={e}
 					isTestimonial={true}
+					isDarkMode={isDarkMode}
 				/>
 			{/each}
 			<div class="wspcr"></div>

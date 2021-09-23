@@ -26,6 +26,7 @@
 					media={media}
 					project={p}
 					on:click={()=>onProjectClicked(p)}
+					isDarkMode={isDarkMode}
 				/>
 			{/each}
 		</div>
@@ -39,6 +40,7 @@
 					media={media}
 					project={p}
 					on:click={()=>onProjectClicked(p)}
+					isDarkMode={isDarkMode}
 				/>
 			{/each}
 		</div>

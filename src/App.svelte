@@ -164,6 +164,7 @@
 		bottom: 15px;
 		right: 15px;
 		color: white;
+		z-index: 100;
 	}
 
 	main{	

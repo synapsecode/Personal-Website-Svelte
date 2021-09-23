@@ -2,10 +2,11 @@
 	export let isTestimonial=false;
 	export let media;
 	export let project;
+	export let isDarkMode;
 </script>
 
 {#if isTestimonial}
-	<div class="testimonial" onclick="">
+	<div class="testimonial {isDarkMode ? 'dmpj':''}" onclick="">
 		<div class="sca">
 			<div class="projectdetails">
 				<label class="projectitle" for="">{project.name}</label><br><br>
@@ -16,7 +17,7 @@
 		</div>
 	</div>
 {:else}
-	<div class="project ltr" on:click>
+	<div class="project ltr {isDarkMode ? 'dmpj':''}" on:click>
 		{#if $media.mobile}
 			<div class="scrarea">
 				<div class="ximage">
@@ -57,10 +58,11 @@
 
 
 <style>
+	/* Common Styles */
 	.project{
 		width: 500px;
-		background-color: rgb(17, 17, 17);
-		color: white;
+		background-color: rgb(230, 229, 229);
+		color: black;
 		border: 1px solid rgba(255,255,255,0.1);
 		border-radius: 5px;
 		display: flex;
@@ -78,13 +80,8 @@
 	}
 
 	.projectitle{
-		font-size: 2.3rem;
-
+		font-size: 2.3rem;	
 		margin-bottom: 10px 
-	}
-
-	.desc, .yr, .stack{
-		color: rgba(255, 255, 255, 0.541);
 	}
 
 	.sca{
@@ -95,8 +92,8 @@
 
 	.testimonial{
 		border: 1px solid rgba(255,255,255,0.1);
-		background-color: rgb(17, 17, 17);
-		color: white;
+		background-color: rgb(230, 229, 229);
+		color: black;
 		margin-right: 10px;
 		margin-bottom: 10px;
 		max-height: 450px;
@@ -104,46 +101,28 @@
 		border-radius: 5px;
 	}
 
+	.desc, .yr, .stack{
+		opacity: 0.6;
+	}
+
+	.dmpj{
+		background-color: rgb(17,17,17);
+		color: white;
+	}
+
 	/* Mobile View */
 	@media (max-width: 920px) {
-		.project > .scrarea {
-			height: 100%;
-			overflow-y: scroll;
-			overflow-x: hidden;
-		}
-		
 		.project{
-			background-color: rgb(17, 17, 17);
-			color: white;
-			border: 1px solid rgba(255,255,255,0.1);
-			border-radius: 5px;
 			margin: 0px 5px;
-			cursor: pointer;
 			display: block;
 			width: 300px;
 		}
 		
-		#langimg{
-			margin: 20px 0 10px 0;
-		}
-
-		.project:hover{
-			border: 1px solid crimson;
-		}
-
-		.projectdetails{
-			padding: 20px;
-			width: 300px;
-		}
-
+		#langimg{ margin: 20px 0 10px 0; }
+		.projectdetails{ width: 300px; }
 		.projectitle{
 			font-size: 2rem;
 			margin-bottom: 10px 
-		}
-
-		.desc, .yr, .stack{
-			color: rgba(255, 255, 255, 0.541);
-			overflow-wrap: break-word;
 		}
 	}
 </style>

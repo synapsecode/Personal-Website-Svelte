@@ -65,6 +65,7 @@ let social = [
 //============================================MAIN PROJECTS============================================
 
 let proj_links = {
+	Atlas: 'https://play.google.com/store/apps/details?id=fm.atlas.atlas',
 	Covaxinator: 'https://github.com/synapsecode/Covaxinator',
 	FlutterGym: null,
 	Microblogger: "https://github.com/synapsecode/Microblogger",
@@ -76,6 +77,7 @@ let proj_links = {
 }
 
 let project_desc = {
+	Atlas:'Atlas helps you collect, summarise and share knowledge rich content from around the web. Published to AppStore & PlayStore',
 	Covaxinator: 'Covaxinator is a Vaccine Administration and Tracking Platform built in Flask for the Oakridge Codefest 2021 Hackathon.',
 	FlutterGym: "A Complete Online Gym and Training Platform coupled with a inbuilt Store for Apparel, Suppliments, Equipments and support for meditation, articles, etc",
 	Microblogger: "An Indian Flutter Based Microblogging platfom that provides a new way to socialize withyour peers!",
@@ -132,6 +134,15 @@ let other_works_desc = {
 //============================================AGGREGATION============================================
 
 let PROJDATA = [
+	{
+		displayName: "Atlas Knowledge",
+		Name: "Atlas",
+		description: project_desc.Atlas,
+		year: 2021,
+		TechStack: "Flutter & AlgoliaSearch",
+		imageSrc: "Images/atlas.png",
+		link: proj_links.Atlas,
+	},
 	{
 		displayName: "Covaxinator",
 		Name: "Covaxinator",
