@@ -139,7 +139,7 @@ let PROJDATA = [
 		Name: "Atlas",
 		description: project_desc.Atlas,
 		year: 2021,
-		TechStack: "Flutter & AlgoliaSearch",
+		TechStack: "Flutter 2",
 		imageSrc: "Images/atlas.png",
 		link: proj_links.Atlas,
 	},
