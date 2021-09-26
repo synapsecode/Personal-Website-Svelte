@@ -134,15 +134,15 @@ let other_works_desc = {
 //============================================AGGREGATION============================================
 
 let PROJDATA = [
-	{
-		displayName: "Atlas Knowledge",
-		Name: "Atlas",
-		description: project_desc.Atlas,
-		year: 2021,
-		TechStack: "Flutter 2",
-		imageSrc: "Images/atlas.png",
-		link: proj_links.Atlas,
-	},
+	// {
+	// 	displayName: "Atlas Knowledge",
+	// 	Name: "Atlas",
+	// 	description: project_desc.Atlas,
+	// 	year: 2021,
+	// 	TechStack: "Flutter 2",
+	// 	imageSrc: "Images/atlas.png",
+	// 	link: proj_links.Atlas,
+	// },
 	{
 		displayName: "Covaxinator",
 		Name: "Covaxinator",
