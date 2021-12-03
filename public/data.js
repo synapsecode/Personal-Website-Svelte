@@ -65,7 +65,7 @@ let social = [
 //============================================MAIN PROJECTS============================================
 
 let proj_links = {
-	Atlas: 'https://play.google.com/store/apps/details?id=fm.atlas.atlas',
+	Atlas: 'PLATFORM_SPECIFIC::[https://play.google.com/store/apps/details?id=fm.atlas.atlas]:[https://apps.apple.com/lt/app/atlas-knowledge-curation/id1586021959]',
 	Covaxinator: 'https://github.com/synapsecode/Covaxinator',
 	FlutterGym: null,
 	Microblogger: "https://github.com/synapsecode/Microblogger",

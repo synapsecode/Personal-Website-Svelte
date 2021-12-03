@@ -59,11 +59,22 @@
 		}
 	}
 	
+	
 
 	function projectRedirect(event){
-		const link = event.detail.link;
+		let link = event.detail.link;
 		if(link !== null){
 			console.log('Redirecting to Project Link: ' + link);
+			//Handle Platform Specific Links
+			if(link.match(/PLATFORM_SPECIFIC::/)){
+				let parts = link.replace('PLATFORM_SPECIFIC::', '').split("]:[");
+				if(navigator.userAgent.match(/Android/i)){
+					link = parts[0].substring(1); //Android Link
+				} else if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+					link = parts[1].substring(0,parts[1].length - 1); //iOS Link
+				}
+				link = parts[0].substring(1); //Android Default
+			}
 			window.open(link, '_blank').focus();
 		}else{
 			alert("This Project is ClosedSource and Private");
