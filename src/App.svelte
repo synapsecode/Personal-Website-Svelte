@@ -59,7 +59,7 @@
 		}
 	}
 	
-	
+
 
 	function projectRedirect(event){
 		let link = event.detail.link;
@@ -72,8 +72,9 @@
 					link = parts[0].substring(1); //Android Link
 				} else if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
 					link = parts[1].substring(0,parts[1].length - 1); //iOS Link
+				}else{
+					link = parts[0].substring(1); //Android Default
 				}
-				link = parts[0].substring(1); //Android Default
 			}
 			window.open(link, '_blank').focus();
 		}else{
