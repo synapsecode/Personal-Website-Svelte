@@ -134,15 +134,15 @@ let other_works_desc = {
 //============================================AGGREGATION============================================
 
 let PROJDATA = [
-	// {
-	// 	displayName: "Atlas Knowledge",
-	// 	Name: "Atlas",
-	// 	description: project_desc.Atlas,
-	// 	year: 2021,
-	// 	TechStack: "Flutter 2",
-	// 	imageSrc: "Images/atlas.png",
-	// 	link: proj_links.Atlas,
-	// },
+	{
+		displayName: "Atlas Knowledge",
+		Name: "Atlas",
+		description: project_desc.Atlas,
+		year: 2021,
+		TechStack: "Flutter (Android, iOS)",
+		imageSrc: "Images/atlas.png",
+		link: proj_links.Atlas,
+	},
 	{
 		displayName: "Covaxinator",
 		Name: "Covaxinator",
@@ -385,6 +385,7 @@ let skillandtech = [
 let testimonial_data = [
 	{
 		name: 'Ismail Abdirahman',
+		origin: 'Freelance Client',
 		testimonial: ' Manas was pleasure to work with! \
 		He is so kind and truly awesome at what he does. He delivered a product that I\
 		 was pleased with. He made sure to communicate his progress and kept me informed throughout\
@@ -393,6 +394,28 @@ let testimonial_data = [
 		    exceeded my expectations. He built the Backend very professionally and will definitely\
 			 be using his services again as well as recommending him to all of my family and friends.'
 	},
+	{
+		name: 'Harshal Kokane',
+		origin: 'Atlas Knowledge',
+		testimonial: "Manas is a young developer who already has multiple years of experience \
+		developing software, and it shows. Manas sees software as a medium to achieve an end \
+		goal which makes him come up with creative ways to accomplish any goal than sticking \
+		within the boundaries of conventional development methods used to achieve it. \
+		Manas developed a feature-rich mobile app for Atlas from scratch within two weeks. \
+		He is a quick learner and exceptional at maintaining a log of the backlog, bugs & \
+		blockers and crisply communicating them to the stakeholders - which is extremely \
+		valuable as a developer. It might be too early to say, but Manas is on a path to \
+		become a 10x dev if he continuous to progress in the direction he's moving in."
+	},
+	{
+		name: 'Susan Roy',
+		origin: "Principal - St. Paul's English School",
+		testimonial: "Manas was given a tough and challenging job of creating an\
+		innovative software application for the school elections. His\
+		creativity and ingenuity was very obvious and he did an\
+		outstanding job! He deserves all the praise and accolade for this\
+		very succcssful and full proof achievement"
+	}
 	
 ]
 //============================================AGGREGATION============================================

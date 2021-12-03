@@ -9,7 +9,12 @@
 	<div class="testimonial {isDarkMode ? 'dmpj':''}" onclick="">
 		<div class="sca">
 			<div class="projectdetails">
-				<label class="projectitle" for="">{project.name}</label><br><br>
+				<label class="projectitle" for="">{project.name}</label><br>
+				{#if project.origin !== undefined}
+					<p style="margin-top:5px; color:gray;">{project.origin}</p>
+					<br>
+				{/if}
+				<br>
 				<p class="desc">
 					{project.testimonial}
 				</p>
@@ -127,4 +132,6 @@
 			margin-bottom: 10px 
 		}
 	}
+
+	
 </style>
